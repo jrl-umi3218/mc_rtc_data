@@ -1,0 +1,3 @@
+/usr/share/mc_rtc/mc_env_description /opt/ros/@ROS_DISTRO@/share/mc_env_description
+/usr/share/mc_rtc/mc_int_obj_description /opt/ros/@ROS_DISTRO@/share/mc_int_obj_description
+/usr/share/mc_rtc/jvrc_description /opt/ros/@ROS_DISTRO@/share/jvrc_description

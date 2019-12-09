@@ -1,0 +1,20 @@
+Source: mc-rtc-data
+Priority: optional
+Maintainer: Pierre Gergondet <pierre.gergondet@gmail.com>
+Standards-Version: 3.9.5
+Section: misc
+Homepage: https://github.com/jrl-umi3218/mc_rtc_data
+Vcs-git: https://github.com/jrl-umi3218/mc_rtc_data
+Vcs-Browser: https://github.com/jrl-umi3218/mc_rtc_data
+Build-Depends: debhelper (>= 9),
+               cmake
+
+Package: mc-rtc-data
+Architecture: all
+Section: misc
+Depends: ${misc:Depends}
+Description: Environments/Robots description for mc_rtc
+ Data files for environments and robots description for mc_rtc
+ .
+ This package contains data (meshes, urdf, rsdf and convex files) and
+ CMake config file to help locate the data.

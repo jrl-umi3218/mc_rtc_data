@@ -1,0 +1,11 @@
+
+Package: ros-@ROS_DISTRO@-mc-rtc-data
+Architecture: all
+Section: misc
+Depends: ${misc:Depends},
+         mc-rtc-data,
+         ros-@ROS_DISTRO@-ros-base
+Description: Environments/Robots description for mc_rtc (ROS)
+ Data files for environments and robots description for mc_rtc
+ .
+ This package creates symbolic links to the regular package
