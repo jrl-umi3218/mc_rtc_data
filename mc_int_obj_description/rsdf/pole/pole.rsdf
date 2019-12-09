@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<robot name="pole">
+  <cylindrical_surface name="Pole" link="pole" radius="0.02" width="2">
+    <origin rpy="0.0 1.5707969665527344 0.0" xyz="0.0 0.0 0.0" />
+    <material name="plastic" />
+  </cylindrical_surface>
+
+</robot>

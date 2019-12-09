@@ -1,0 +1,94 @@
+<?xml version="1.0" ?>
+<robot name="litter">
+	<link name="platform">
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0" />
+			<mass value="5"/>
+			<inertia ixx="1" ixy="0" ixz="0"
+			iyy="1" iyz="0"
+			izz="1" />
+		</inertial>
+		<visual>
+			<geometry>
+				<mesh filename="package://mc_int_obj_description/meshes/litter/platform.stl" />
+			</geometry>
+			<material name="Platform">
+				<color rgba="0.5653786659240723 0.6266508102416992 0.2433052808046341 1" />
+			</material>
+		</visual>
+	</link>
+
+	<link name="chair">
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0" />
+			<mass value="1"/>
+			<inertia ixx="1" ixy="0" ixz="0"
+			iyy="1" iyz="0"
+			izz="1" />
+		</inertial>
+		<visual>
+			<geometry>
+				<mesh filename="package://mc_int_obj_description/meshes/litter/chair.stl" />
+			</geometry>
+			<material name="Chair">
+				<color rgba="0.4041687250137329 0.4479699730873108 0.1739301085472107 1" />
+			</material>
+		</visual>
+	</link>
+
+	<link name="right_pole">
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0" />
+			<mass value="1"/>
+			<inertia ixx="1" ixy="0" ixz="0"
+			iyy="1" iyz="0"
+			izz="1" />
+		</inertial>
+		<visual>
+			<geometry>
+				<mesh filename="package://mc_int_obj_description/meshes/litter/right_pole.stl" />
+			</geometry>
+		        <material name="Pole">
+				<color rgba="0.17885641753673553 0.13876530528068542 0.11056750267744064 1" />
+		        </material>
+		</visual>
+	</link>
+
+	<link name="left_pole">
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0" />
+			<mass value="1"/>
+			<inertia ixx="1" ixy="0" ixz="0"
+			iyy="1" iyz="0"
+			izz="1" />
+		</inertial>
+		<visual>
+			<geometry>
+				<mesh filename="package://mc_int_obj_description/meshes/litter/left_pole.stl" />
+			</geometry>
+		        <material name="Pole">
+				<color rgba="0.17885641753673553 0.13876530528068542 0.11056750267744064 1" />
+		        </material>
+		</visual>
+	</link>
+
+
+
+  <joint name="chair" type="fixed">
+    <parent link="platform" />
+    <child link="chair" />
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.20000000298023224 0.25" />
+  </joint>
+
+  <joint name="right_pole" type="fixed">
+    <parent link="platform" />
+    <child link="right_pole" />
+    <origin rpy="0.0 0.0 0.0" xyz="-0.17000000178813934 0.0 0.0" />
+  </joint>
+
+  <joint name="left_pole" type="fixed">
+    <parent link="platform" />
+    <child link="left_pole" />
+    <origin rpy="0.0 0.0 0.0" xyz="0.17000000178813934 0.0 0.0" />
+  </joint>
+</robot>

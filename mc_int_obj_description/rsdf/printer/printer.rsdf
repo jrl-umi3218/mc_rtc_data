@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<robot name="printer">
+  
+  <planar_surface name="PrinterTop" link="printer">
+    <origin rpy="0.0 -0.0 0.0" xyz="0.11774902045726776 -0.06039998680353165 0.15000000596046448" />
+    <points>
+      <point xy="-0.06474901735782623 -0.1455635130405426" />
+        <point xy="0.06474900245666504 -0.1455635130405426" />
+        <point xy="0.06474900245666504 0.1455635130405426" />
+        <point xy="-0.06474901735782623 0.1455635130405426" />
+    </points>
+    <material name="plastic" />
+  </planar_surface>
+
+    
+  <planar_surface name="PrinterTopLarge" link="printer">
+    <origin rpy="0.0 -0.0 0.0" xyz="0.10024900734424591 -0.06039998680353165 0.15000000596046448" />
+    <points>
+      <point xy="-0.08224901556968689 -0.1455635130405426" />
+        <point xy="0.08224901556968689 -0.1455635130405426" />
+        <point xy="0.08224901556968689 0.1455635130405426" />
+        <point xy="-0.08224901556968689 0.1455635130405426" />
+    </points>
+    <material name="plastic" />
+  </planar_surface>
+
+</robot>

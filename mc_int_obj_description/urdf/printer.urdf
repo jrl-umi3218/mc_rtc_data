@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<robot name="printer">
+  <link name="printer">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="10."/>
+      <inertia ixx="1" ixy="0" ixz="0"
+        iyy="1" iyz="0" izz="1" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_int_obj_description/meshes/printer/printer.stl" />
+      </geometry>
+      <material name="default">
+        <color rgba="1.0 1.0 1.0 1" />
+      </material>
+    </visual>
+  </link>
+
+  <link name="rack">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="1."/>
+      <inertia ixx="1" ixy="0" ixz="0"
+        iyy="1" iyz="0" izz="1" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_int_obj_description/meshes/printer/rack.stl" />
+      </geometry>
+      <material name="Material">
+        <color rgba="0.800000011920929 0.800000011920929 0.800000011920929 1" />
+      </material>
+    </visual>
+  </link>
+
+  <joint name="rack" type="prismatic">
+    <parent link="printer" />
+    <child link="rack" />
+    <origin rpy="0.0 0.0 0.0" xyz="0.07800000160932541 0.0 -0.10999999940395355" />
+    <axis xyz="1 0 0"/>
+    <limit effort="0" lower="-0.02" upper="0.2" velocity="100" />
+  </joint>
+</robot>

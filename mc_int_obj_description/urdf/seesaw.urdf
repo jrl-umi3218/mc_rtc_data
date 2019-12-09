@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<robot name="seesaw">
+
+	<link name="base">
+		<visual>
+			<geometry>
+				<mesh filename="package://mc_int_obj_description/meshes/seesaw/base.dae" />
+			</geometry>
+		</visual>
+	</link>
+
+	<link name="board">
+		<inertial>
+			<origin xyz="0 0 0.05875" rpy="0 0 0" />
+                        <mass value="21."/>
+                        <inertia ixx="1.121" ixy="0" ixz="0"
+                                iyy="3.939" iyz="0"
+                                izz="5.058" />
+	        </inertial>
+		<visual>
+			<geometry>
+				<mesh filename="package://mc_int_obj_description/meshes/seesaw/board.dae" />
+			</geometry>
+		</visual>
+	</link>
+
+	<joint name="board" type="revolute">
+		<axis xyz="0 1 0"/>
+		<limit effort="0" velocity="100" lower="-3.141592653589793" upper="3.141592653589793" />
+		<parent link="base" />
+		<child link="board" />
+		<origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+	</joint>
+
+</robot>

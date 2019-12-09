@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<robot name="valve_handle">
+  <cylindrical_surface name="Handle4" link="valve" radius="0.04500000178813934" width="0.01">
+    <origin rpy="1.5707968473434448 7.07252836227417 1.5707972049713135" xyz="0.0 0.14197809994220734 0.14086242020130157" />
+    <material name="plastic" />
+  </cylindrical_surface>
+
+    <cylindrical_surface name="Handle3" link="valve" radius="0.04500000178813934" width="0.01">
+    <origin rpy="1.5707956552505493 5.500882148742676 1.5707972049713135" xyz="0.0 -0.14098303020000458 0.1418583244085312" />
+    <material name="plastic" />
+  </cylindrical_surface>
+
+    <cylindrical_surface name="Handle2" link="valve" radius="0.04500000178813934" width="0.01">
+    <origin rpy="1.5707969665527344 3.9275436401367188 1.5707954168319702" xyz="0.0 -0.14149947464466095 -0.14134319126605988" />
+    <material name="plastic" />
+  </cylindrical_surface>
+
+    <cylindrical_surface name="Handle1" link="valve" radius="0.04500000178813934" width="0.01">
+    <origin rpy="1.5707956552505493 2.3567426204681396 1.5707954168319702" xyz="0.0 0.14134381711483002 -0.141498863697052" />
+    <material name="plastic" />
+  </cylindrical_surface>
+
+</robot>

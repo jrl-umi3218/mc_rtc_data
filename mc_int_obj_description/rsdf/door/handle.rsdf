@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<robot name="door">
+  <cylindrical_surface name="Handle" link="handle" radius="0.01" width="0.14">
+    <origin rpy="-1.5707969665527344 1.5707969665527344 0.0" xyz="0.0 -0.03999999910593033 -0.05999999865889549" />
+    <material name="plastic" />
+  </cylindrical_surface>
+
+</robot>

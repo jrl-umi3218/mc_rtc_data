@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<robot name="litter">
+  <cylindrical_surface name="BackRightPole" link="right_pole" radius="0.02" width="0.5">
+    <origin rpy="0.0 0.0 -1.5707969665527344" xyz="-4.76837158203125e-07 0.75 0.0" />
+    <material name="plastic" />
+  </cylindrical_surface>
+
+    <cylindrical_surface name="FrontRightPole" link="right_pole" radius="0.02" width="0.5">
+    <origin rpy="0.0 0.0 -1.5707969665527344" xyz="-4.76837158203125e-07 -0.75 0.0" />
+    <material name="plastic" />
+  </cylindrical_surface>
+
+</robot>

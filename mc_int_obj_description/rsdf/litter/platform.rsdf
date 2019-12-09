@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<robot name="litter">
+  <planar_surface name="Platform" link="platform">
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.05000000074505806" />
+    <points>
+      <point xy="-0.25 -0.5" />
+        <point xy="0.25 -0.5" />
+        <point xy="0.25 0.5" />
+        <point xy="-0.25 0.5" />
+    </points>
+    <material name="plastic" />
+  </planar_surface>
+
+</robot>

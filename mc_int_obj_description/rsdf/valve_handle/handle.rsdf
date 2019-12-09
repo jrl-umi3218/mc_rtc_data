@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<robot name="valve_handle">
+  <cylindrical_surface name="Handle" link="handle" radius="0.019999999552965164" width="0.14">
+    <origin rpy="0.0 -1.5707969665527344 0.0" xyz="0.0 0.0 0.0" />
+    <material name="plastic" />
+  </cylindrical_surface>
+
+</robot>

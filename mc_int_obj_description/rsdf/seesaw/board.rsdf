@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<robot name="seesaw">
+  
+  <planar_surface name="Board" link="board">
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 -7.783800270999564e-09 0.058750543743371964" />
+    <points>
+      <point xy="0.75 -0.4000000059604645" />
+        <point xy="0.75 0.4000000059604645" />
+        <point xy="-0.75 0.4000000059604645" />
+        <point xy="-0.75 -0.4000000059604645" />
+    </points>
+    <material name="plastic" />
+  </planar_surface>
+
+</robot>

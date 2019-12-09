@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<robot name="door">
+	<link name="base_link" />
+
+	<link name="door">
+		<inertial>
+			<origin xyz="-0.00724 0.441 1.029" rpy="0 0 0" />
+			<mass value="5."/>
+			<inertia ixx="1" ixy="0" ixz="0"
+			iyy="1" iyz="0"
+			izz="1" />
+		</inertial>
+		<visual>
+			<geometry>
+				<mesh filename="package://mc_int_obj_description/meshes/door/door.dae" />
+			</geometry>
+		</visual>
+	</link>
+
+	<joint name="door" type="revolute">
+		<axis xyz="0 0 1"/>
+		<limit effort="0" velocity="100" lower="-3.141592653589793" upper="3.141592653589793" />
+		<parent link="base_link" />
+		<child link="door" />
+		<origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+	</joint>
+
+	<link name="handle">
+		<inertial>
+			<origin xyz="0 -0.034 -0.015" rpy="0 0 0" />
+			<mass value="0.200"/>
+			<inertia ixx="1" ixy="0" ixz="0"
+			iyy="1" iyz="0"
+			izz="1" />
+		</inertial>
+		<visual>
+			<geometry>
+				<mesh filename="package://mc_int_obj_description/meshes/door/handle.dae" />
+			</geometry>
+		</visual>
+
+	</link>
+		<joint name="handle" type="revolute">
+		<axis xyz="0 1 0"/>
+		<limit effort="0" velocity="100" lower="-1.5707963267948966" upper="0.1" />
+		<parent link="door" />
+		<child link="handle" />
+		<origin rpy="0.0 1.5707969665527344 1.5707969665527344" xyz="-0.007000000216066837 0.8799999952316284 1.0399999618530273" />
+	</joint>
+</robot>

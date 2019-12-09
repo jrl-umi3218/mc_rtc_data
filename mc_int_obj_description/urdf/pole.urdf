@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<robot name="pole">
+	<link name="pole">
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0" />
+			<mass value="1."/>
+			<inertia ixx="1" ixy="0" ixz="0"
+			iyy="1" iyz="0"
+			izz="1" />
+		</inertial>
+		<visual>
+			<geometry>
+				<mesh filename="package://mc_int_obj_description/meshes/pole/pole.stl" />
+			</geometry>
+			<material name="Pole">
+				<color rgba="0.36722952127456665 0.3328605592250824 0.25622060894966125 1" />
+			</material>
+		</visual>
+
+	</link>
+</robot>

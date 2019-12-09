@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<robot name="door">
+  <planar_surface name="Door" link="door">
+    <origin rpy="0.0 0.0 0.0" xyz="-0.015000000596046448 0.4650000035762787 1.0199999809265137" />
+    <points>
+      <point xy="0.0 0.4650000035762787" />
+        <point xy="0.0 -0.4650000035762787" />
+        <point xy="0.0 0.4650000035762787" />
+        <point xy="0.0 -0.4650000035762787" />
+    </points>
+    <material name="plastic" />
+  </planar_surface>
+
+</robot>
