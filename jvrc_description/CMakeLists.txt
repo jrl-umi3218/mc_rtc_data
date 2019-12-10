@@ -10,6 +10,8 @@ if(${catkin_FOUND})
 
 else()
 
+  set(CATKIN_PACKAGE_SHARE_DESTINATION share/mc_rtc/${PROJECT_NAME})
+
   include(CMakePackageConfigHelpers)
   set(VERSION_CONFIG "${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}ConfigVersion.cmake")
   set(PROJECT_CONFIG "${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}Config.cmake")
@@ -21,8 +23,6 @@ else()
   )
   configure_package_config_file("${CMAKE_CURRENT_SOURCE_DIR}/../cmake/Config.cmake.in" "${PROJECT_CONFIG}" INSTALL_DESTINATION "${CONFIG_INSTALL_DIR}")
   install(FILES "${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}Config.cmake" "${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}ConfigVersion.cmake" DESTINATION "${CONFIG_INSTALL_DIR}")
-
-  set(CATKIN_PACKAGE_SHARE_DESTINATION share/mc_rtc/${PROJECT_NAME})
 
   install(FILES package.xml DESTINATION "${CATKIN_PACKAGE_SHARE_DESTINATION}")
 
