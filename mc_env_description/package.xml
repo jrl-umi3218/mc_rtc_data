@@ -1,6 +1,6 @@
 <package>
   <name>mc_env_description</name>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
   <description>mc_env_description</description>
   <author>Joris Vaillant</author>
   <maintainer email="pierre.gergondet@gmail.com">Pierre Gergondet</maintainer>

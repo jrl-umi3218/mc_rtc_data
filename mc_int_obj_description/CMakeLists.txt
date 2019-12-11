@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.1)
 cmake_policy(SET CMP0048 NEW)
-project(mc_int_obj_description VERSION 1.0.1)
+project(mc_int_obj_description VERSION 1.0.2)
 
 find_package(catkin)
 

@@ -1,3 +1,9 @@
+mc-rtc-data (1.0.2-1ubuntu1) unstable; urgency=medium
+
+  * Further fixes to CMake config generation
+
+ -- Pierre Gergondet <pierre.gergondet+ppa@gmail.com>  Wed, 11 Dec 2019 09:29:10 +0800
+
 mc-rtc-data (1.0.1-1ubuntu1) unstable; urgency=medium
 
   * Fix CMake config generation

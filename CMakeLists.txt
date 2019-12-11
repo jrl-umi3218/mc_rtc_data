@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.1)
 cmake_policy(SET CMP0048 NEW)
-project(mc_rtc_data VERSION 1.0.1)
+project(mc_rtc_data VERSION 1.0.2)
 
 enable_testing()
 
