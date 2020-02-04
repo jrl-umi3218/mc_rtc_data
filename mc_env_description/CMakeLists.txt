@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.1)
 cmake_policy(SET CMP0048 NEW)
 project(mc_env_description VERSION 1.0.2)
 
-find_package(catkin)
+find_package(catkin QUIET)
 
 if(${catkin_FOUND})
 
