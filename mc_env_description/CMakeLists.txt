@@ -4,7 +4,7 @@ project(mc_env_description VERSION 1.0.2)
 
 find_package(catkin QUIET)
 
-if(${catkin_FOUND})
+if(NOT DISABLE_ROS AND ${catkin_FOUND})
 
   catkin_package()
 
