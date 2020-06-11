@@ -106,6 +106,11 @@ jobs:
           export ROS_DISTRO="melodic"
           export PACKAGES_OUT=${PACKAGES_OUT}-${ROS_DISTRO}
         fi
+        if [ "${{ matrix.dist }}" = "focal" -a "${{ matrix.arch }}" = "amd64" ]
+        then
+          export ROS_DISTRO="noetic"
+          export PACKAGES_OUT=${PACKAGES_OUT}-${ROS_DISTRO}
+        fi
         echo "::set-env name=ROS_DISTRO::${ROS_DISTRO}"
         echo "::set-env name=PACKAGES_OUT::${PACKAGES_OUT}"
         if [ "${ROS_DISTRO}" != "" ]
