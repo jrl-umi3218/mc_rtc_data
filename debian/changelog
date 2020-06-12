@@ -1,3 +1,10 @@
+mc-rtc-data (1.0.3-1ubuntu1) unstable; urgency=medium
+
+  * Remove duplicate files
+  * Support ROS/noetic
+
+ -- Pierre Gergondet <pierre.gergondet+ppa@gmail.com>  Fri, 12 Jun 2020 14:25:11 +0800
+
 mc-rtc-data (1.0.2-1ubuntu1) unstable; urgency=medium
 
   * Further fixes to CMake config generation
