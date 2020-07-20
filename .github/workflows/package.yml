@@ -44,6 +44,8 @@ jobs:
         grep -q "<version>${VERSION}</version>" mc_rtc_data/package.xml
         echo "::set-env name=REJECTION::Upstream version in debian/changelog does not match tag"
         head -n 1 debian/changelog | grep -q "mc-rtc-data (${VERSION}"
+        echo "::set-env name=REJECTION::Upstream version in conanfile.py does not match tag"
+        grep -q "version = \"${VERSION}\"" conanfile.py
         echo "::set-env name=REJECTION::"
         export TAG=`echo ${{ github.ref }} | sed -e 's@refs/tags/@@'`
         echo "::set-env name=RELEASE_TAG::${TAG}"
