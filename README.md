@@ -1,6 +1,7 @@
 # mc\_rtc\_data
 
 [![License](https://img.shields.io/badge/License-BSD%202--Clause-green.svg)](https://opensource.org/licenses/BSD-2-Clause)
+[ ![Download](https://api.bintray.com/packages/gergondet/multi-contact/mc_rtc_data%3Amulti-contact/images/download.svg) ](https://bintray.com/gergondet/multi-contact/mc_rtc_data%3Amulti-contact/_latestVersion)
 
 This package provides data for mc\_rtc
 
@@ -31,6 +32,18 @@ sudo apt update
 sudo apt install mc-rtc-data
 # Install in a ROS-compatible way
 sudo apt install ros-${ROS_DISTRO}-mc-rtc-data
+```
+
+## Conan
+
+Install the latest version using [conan](https://conan.io/)
+
+```bash
+conan remote add multi-contact https://api.bintray.com/conan/gergondet/multi-contact
+# Install the latest release
+conan install mc_rtc_data/latest@multi-contact/stable
+# Or install the latest development version
+# conan install mc_rtc_data/latest@multi-contact/dev
 ```
 
 ## Manually build from source
