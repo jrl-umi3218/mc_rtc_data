@@ -1,3 +1,10 @@
+mc-rtc-data (1.0.4-1ubuntu1) unstable; urgency=medium
+
+  * Add chair model
+  * Better handle DISABLE_ROS
+
+ -- Pierre Gergondet <pierre.gergondet+ppa@gmail.com>  Wed, 23 Sep 2020 22:13:35 +0800
+
 mc-rtc-data (1.0.3-1ubuntu1) unstable; urgency=medium
 
   * Remove duplicate files
