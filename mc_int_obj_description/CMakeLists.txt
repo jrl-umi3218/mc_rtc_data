@@ -2,9 +2,11 @@ cmake_minimum_required(VERSION 3.1)
 cmake_policy(SET CMP0048 NEW)
 project(mc_int_obj_description VERSION 1.0.3)
 
-find_package(catkin QUIET)
+if(NOT DISABLE_ROS)
+  find_package(catkin QUIET)
+endif()
 
-if(NOT DISABLE_ROS AND ${catkin_FOUND})
+if(catkin_FOUND)
 
   catkin_package()
 
