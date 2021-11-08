@@ -69,7 +69,7 @@ git clone --recursive https://github.com/jrl-umi3218/mc_rtc_data
 mkdir mc_rtc_data/_build
 cd mc_rtc_data/_build
 cmake ..
-make intall
+make install
 ```
 
 Or clone in your catkin workspace and build
