@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <robot name="jvrc1">
   <gripper_surface name="LeftGripper" link="l_wrist">
-    <origin rpy="3.14 0.0 0.0" xyz="0.025 0.0 -0.095" />
+    <origin rpy="3.14 0.0 0.0" xyz="0.0 -0.0085 -0.095" />
     <motor rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" max_torque="1000" />
     <points>
       <origin rpy="-1.5707964897155762 -0.0 0.0" xyz="0.0 0.02 0.0" />
