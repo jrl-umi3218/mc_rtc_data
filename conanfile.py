@@ -9,7 +9,7 @@ base = python_requires("Eigen3ToPython/latest@multi-contact/dev")
 
 class MCRTCDataConan(base.Eigen3ToPythonConan):
     name = "mc_rtc_data"
-    version = "1.0.4"
+    version = "1.0.5"
     description = "Environments/Robots description for mc_rtc"
     topics = ("robotics", "data")
     url = "https://github.com/jrl-umi3218/mc_rtc_data"
