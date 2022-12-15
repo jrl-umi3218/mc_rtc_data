@@ -917,7 +917,7 @@
     <limit effort="100.0" lower="-2.61799387799" upper="2.61799387799" velocity="3.66519"/>
   </joint>
   <joint name="R_UTHUMB" type="revolute">
-    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.023 -0.084"/>
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.033 -0.084"/>
     <axis xyz="1.0 0.0 0.0"/>
     <parent link="R_WRIST_Y_S"/>
     <child link="R_UTHUMB_S"/>
@@ -932,7 +932,7 @@
     <mimic joint="R_UTHUMB" multiplier="3" offset="0"/>
   </joint>
   <joint name="R_UINDEX" type="revolute">
-    <origin rpy="0.0 -0.0 0.0" xyz="0.025 -0.006 -0.102"/>
+    <origin rpy="0.0 -0.0 0.0" xyz="0.025 -0.016 -0.084"/>
     <axis xyz="1.0 0.0 0.0"/>
     <parent link="R_WRIST_Y_S"/>
     <child link="R_UINDEX_S"/>
@@ -948,7 +948,7 @@
     <mimic joint="R_UTHUMB" multiplier="-3" offset="0"/>
   </joint>
   <joint name="R_ULITTLE" type="revolute">
-    <origin rpy="0.0 -0.0 0.0" xyz="-0.025 -0.006 -0.102"/>
+    <origin rpy="0.0 -0.0 0.0" xyz="-0.025 -0.016 -0.084"/>
     <axis xyz="1.0 0.0 0.0"/>
     <parent link="R_WRIST_Y_S"/>
     <child link="R_ULITTLE_S"/>
@@ -1013,7 +1013,7 @@
     <limit effort="100.0" lower="-2.61799387799" upper="2.61799387799" velocity="3.66519"/>
   </joint>
   <joint name="L_UTHUMB" type="revolute">
-    <origin rpy="0.0 -0.0 0.0" xyz="0.0 -0.023 -0.084"/>
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 -0.033 -0.084"/>
     <axis xyz="1.0 0.0 0.0"/>
     <parent link="L_WRIST_Y_S"/>
     <child link="L_UTHUMB_S"/>
@@ -1028,7 +1028,7 @@
     <mimic joint="L_UTHUMB" multiplier="3" offset="0"/>
   </joint>
   <joint name="L_UINDEX" type="revolute">
-    <origin rpy="0.0 -0.0 0.0" xyz="0.025 0.006 -0.102"/>
+    <origin rpy="0.0 -0.0 0.0" xyz="0.025 0.016 -0.084"/>
     <axis xyz="1.0 0.0 0.0"/>
     <parent link="L_WRIST_Y_S"/>
     <child link="L_UINDEX_S"/>
@@ -1044,7 +1044,7 @@
     <mimic joint="L_UTHUMB" multiplier="-3" offset="0"/>
   </joint>
   <joint name="L_ULITTLE" type="revolute">
-    <origin rpy="0.0 -0.0 0.0" xyz="-0.025 0.006 -0.102"/>
+    <origin rpy="0.0 -0.0 0.0" xyz="-0.025 0.016 -0.084"/>
     <axis xyz="1.0 0.0 0.0"/>
     <parent link="L_WRIST_Y_S"/>
     <child link="L_ULITTLE_S"/>
