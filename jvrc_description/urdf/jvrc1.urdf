@@ -928,7 +928,7 @@
     <axis xyz="1.0 0.0 0.0"/>
     <parent link="R_UTHUMB_S"/>
     <child link="R_LTHUMB_S"/>
-    <limit effort="100.0" lower="-1.57079632679" upper="0.0" velocity="13.6135"/>
+    <limit effort="300.0" lower="-2.356194490191" upper="2.356194490191" velocity="20.42034"/>
     <mimic joint="R_UTHUMB" multiplier="3" offset="0"/>
   </joint>
   <joint name="R_UINDEX" type="revolute">
@@ -936,7 +936,7 @@
     <axis xyz="1.0 0.0 0.0"/>
     <parent link="R_WRIST_Y_S"/>
     <child link="R_UINDEX_S"/>
-    <limit effort="100.0" lower="0.0" upper="1.57079632679" velocity="9.42477"/>
+    <limit effort="100.0" lower="-0.785398163397" upper="0.785398163397" velocity="6.80678"/>
     <mimic joint="R_UTHUMB" multiplier="-1" offset="0"/>
   </joint>
   <joint name="R_LINDEX" type="revolute">
@@ -944,7 +944,7 @@
     <axis xyz="1.0 0.0 0.0"/>
     <parent link="R_UINDEX_S"/>
     <child link="R_LINDEX_S"/>
-    <limit effort="100.0" lower="0.0" upper="1.57079632679" velocity="5.75958"/>
+    <limit effort="300.0" lower="-2.356194490191" upper="2.356194490191" velocity="20.42034"/>
     <mimic joint="R_UTHUMB" multiplier="-3" offset="0"/>
   </joint>
   <joint name="R_ULITTLE" type="revolute">
@@ -952,7 +952,7 @@
     <axis xyz="1.0 0.0 0.0"/>
     <parent link="R_WRIST_Y_S"/>
     <child link="R_ULITTLE_S"/>
-    <limit effort="100.0" lower="0.0" upper="1.57079632679" velocity="9.42477"/>
+    <limit effort="100.0" lower="-0.785398163397" upper="0.785398163397" velocity="6.80678"/>
     <mimic joint="R_UTHUMB" multiplier="-1" offset="0"/>
   </joint>
   <joint name="R_LLITTLE" type="revolute">
@@ -960,7 +960,7 @@
     <axis xyz="1.0 0.0 0.0"/>
     <parent link="R_ULITTLE_S"/>
     <child link="R_LLITTLE_S"/>
-    <limit effort="100.0" lower="0.0" upper="1.57079632679" velocity="5.75958"/>
+    <limit effort="300.0" lower="-2.356194490191" upper="2.356194490191" velocity="20.42034"/>
     <mimic joint="R_UTHUMB" multiplier="-3" offset="0"/>
   </joint>
   <joint name="L_SHOULDER_P" type="revolute">
@@ -1024,7 +1024,7 @@
     <axis xyz="1.0 0.0 0.0"/>
     <parent link="L_UTHUMB_S"/>
     <child link="L_LTHUMB_S"/>
-    <limit effort="100.0" lower="-0.0" upper="1.57079632679" velocity="13.6135"/>
+    <limit effort="300.0" lower="-2.356194490191" upper="2.356194490191" velocity="20.42034"/>
     <mimic joint="L_UTHUMB" multiplier="3" offset="0"/>
   </joint>
   <joint name="L_UINDEX" type="revolute">
@@ -1032,7 +1032,7 @@
     <axis xyz="1.0 0.0 0.0"/>
     <parent link="L_WRIST_Y_S"/>
     <child link="L_UINDEX_S"/>
-    <limit effort="100.0" lower="-1.57079632679" upper="0.0" velocity="9.42477"/>
+    <limit effort="100.0" lower="-0.785398163397" upper="0.785398163397" velocity="6.80678"/>
     <mimic joint="L_UTHUMB" multiplier="-1" offset="0"/>
   </joint>
   <joint name="L_LINDEX" type="revolute">
@@ -1040,7 +1040,7 @@
     <axis xyz="1.0 0.0 0.0"/>
     <parent link="L_UINDEX_S"/>
     <child link="L_LINDEX_S"/>
-    <limit effort="100.0" lower="-1.57079632679" upper="0.0" velocity="5.75958"/>
+    <limit effort="300.0" lower="-2.356194490191" upper="2.356194490191" velocity="20.42034"/>
     <mimic joint="L_UTHUMB" multiplier="-3" offset="0"/>
   </joint>
   <joint name="L_ULITTLE" type="revolute">
@@ -1048,7 +1048,7 @@
     <axis xyz="1.0 0.0 0.0"/>
     <parent link="L_WRIST_Y_S"/>
     <child link="L_ULITTLE_S"/>
-    <limit effort="100.0" lower="-1.57079632679" upper="0.0" velocity="9.42477"/>
+    <limit effort="100.0" lower="-0.785398163397" upper="0.785398163397" velocity="6.80678"/>
     <mimic joint="L_UTHUMB" multiplier="-1" offset="0"/>
   </joint>
   <joint name="L_LLITTLE" type="revolute">
@@ -1056,7 +1056,7 @@
     <axis xyz="1.0 0.0 0.0"/>
     <parent link="L_ULITTLE_S"/>
     <child link="L_LLITTLE_S"/>
-    <limit effort="100.0" lower="-1.57079632679" upper="0.0" velocity="5.75958"/>
+    <limit effort="300.0" lower="-2.356194490191" upper="2.356194490191" velocity="20.42034"/>
     <mimic joint="L_UTHUMB" multiplier="-3" offset="0"/>
   </joint>
   <link name="gsensor">
