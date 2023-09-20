@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.1)
 cmake_policy(SET CMP0048 NEW)
-project(mc_env_description VERSION 1.0.6)
+project(mc_env_description VERSION 1.0.7)
 
 if(NOT DISABLE_ROS)
   find_package(catkin QUIET)
