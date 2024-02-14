@@ -7,6 +7,7 @@ Homepage: https://github.com/jrl-umi3218/mc_rtc_data
 Vcs-git: https://github.com/jrl-umi3218/mc_rtc_data
 Vcs-Browser: https://github.com/jrl-umi3218/mc_rtc_data
 Build-Depends: debhelper (>= 9),
+#ROS2           ros-@ROS_DISTRO@-ament-cmake,
                cmake
 
 Package: mc-rtc-data

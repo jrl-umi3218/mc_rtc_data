@@ -20,10 +20,11 @@ jobs:
   package:
     uses: jrl-umi3218/github-actions/.github/workflows/package-project.yml@master
     with:
+      main-repo: jrl-umi3218/mc_rtc_data
       with-ros: true
       matrix: |
         {
-          "dist": ["bionic", "focal"],
+          "dist": ["bionic", "focal", "jammy"],
           "arch": ["amd64"]
         }
     secrets:

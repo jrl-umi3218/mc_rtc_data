@@ -9,6 +9,11 @@ enable_testing()
 
 if(DISABLE_ROS)
   message(STATUS "Building without ROS support as DISABLE_ROS=ON")
+else()
+  if(NOT DEFINED ENV{ROS_VERSION})
+    message(FATAL_ERROR "ROS_VERSION is not set in the environment")
+  endif()
+  set(ROS_VERSION $ENV{ROS_VERSION})
 endif()
 
 add_subdirectory(jvrc_description)

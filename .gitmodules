@@ -1,0 +1,9 @@
+[submodule "jvrc_description"]
+	path = jvrc_description
+	url = https://github.com/jrl-umi3218/jvrc_description
+[submodule "mc_env_description"]
+	path = mc_env_description
+	url = https://github.com/jrl-umi3218/mc_env_description
+[submodule "mc_int_obj_description"]
+	path = mc_int_obj_description
+	url = https://github.com/jrl-umi3218/mc_int_obj_description
