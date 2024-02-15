@@ -1,9 +1,10 @@
 cmake_minimum_required(VERSION 3.1)
 cmake_policy(SET CMP0048 NEW)
 
-option(DISABLE_ROS OFF)
 set(PROJECT_VERSION 1.0.7)
 project(mc_rtc_data VERSION ${PROJECT_VERSION})
+
+option(DISABLE_ROS "Disable ROS build" ON)
 
 enable_testing()
 
