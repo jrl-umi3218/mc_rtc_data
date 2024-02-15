@@ -2,11 +2,11 @@ name: CI of mc_rtc_data
 
 on:
   push:
-    branches:
-      - '**'
+    branches-ignore:
+      - ROSFree
   pull_request:
-    branches:
-      - '**'
+    branches-ignore:
+      - ROSFree
 
 jobs:
   build:
