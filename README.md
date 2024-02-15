@@ -15,7 +15,7 @@ This package can be used as a ROS package.
 
 # Installing
 
-## Ubuntu LTS (16.04, 18.04, 20.04)
+## Ubuntu LTS (18.04, 20.04, 22.04)
 
 You must first setup our package mirror:
 
@@ -64,12 +64,16 @@ To compile you need the following tools and libraries:
 
 ### Building
 
+Clone in your catkin/colcon workspace and build
+
+To build outside of these checkout the [ROSFree](https://github.com/jrl-umi3218/mc_rtc_data/tree/ROSFree) branch or copy the CMakeLists.txt file in debian folder to the root folder first.
+
 ```sh
 git clone --recursive https://github.com/jrl-umi3218/mc_rtc_data
 mkdir mc_rtc_data/_build
-cd mc_rtc_data/_build
+cd mc_rtc_data
+cp debian/CMakeLists.txt .
+cd _build
 cmake ..
 make install
 ```
-
-Or clone in your catkin workspace and build

@@ -10,6 +10,7 @@ TMP = $(CURDIR)/debian/tmp
 	dh $@
 
 override_dh_auto_configure:
+	cp $(CURDIR)/debian/CMakeLists.txt $(CURDIR)/
 	dh_auto_configure -- -DDISABLE_ROS=ON
 
 override_dh_auto_install:
