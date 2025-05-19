@@ -15,7 +15,7 @@ This package can be used as a ROS package.
 
 # Installing
 
-## Ubuntu LTS (18.04, 20.04, 22.04)
+## Ubuntu LTS (22.04)
 
 You must first setup our package mirror:
 
